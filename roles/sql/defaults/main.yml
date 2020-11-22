@@ -1,7 +1,7 @@
 ---
 
-mssql_repo_src: "https://packages.microsoft.com/rhel/7/mssql-server-2017/"
-mssql_repo: "mssql-server-2017"
+mssql_repo_src: "https://packages.microsoft.com/rhel/7/mssql-server-2019/"
+mssql_repo: "mssql-server-2019"
 mssql_tool_repo_src: "https://packages.microsoft.com/rhel/7/prod/"
 mssql_tool_repo: "prod"
 gpgkey: "https://packages.microsoft.com/keys/microsoft.asc"
@@ -10,11 +10,11 @@ mssql_service: "mssql-server"
 mssql_tool_packages:
   - mssql-tools
   - unixODBC-devel
-mssql_sa_password: '!Passw0rd'
+mssql_sa_password: 'Redhat_123'
 mssql_pid: 'evaluation'
 mssql_install_agent: 'y'
-mssql_ports: "1443/tcp"
-path_home: "/home/ec2-user"
+mssql_ports: "1433/tcp"
+path_home: "/root/sql"
 #path_home: "/home/cloud-user"
 src_loaddb_sql: "https://raw.githubusercontent.com/mheslin/SQL-Server---RHEL-BM-Demo/master/Load_DB.sql"
 tgt_loaddb_sql: "{{ path_home }}/Load_DB.sql"

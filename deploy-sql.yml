@@ -1,0 +1,10 @@
+---
+- name: Deploy SQL server on target VM
+  hosts: localhost
+  gather_facts: false
+
+  vars:
+    instance_name: "dummy"
+
+  roles:
+    - role: sql
