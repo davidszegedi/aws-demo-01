@@ -16,11 +16,11 @@ mssql_install_agent: 'y'
 mssql_ports: "1433/tcp"
 path_home: "/root/sql"
 #path_home: "/home/cloud-user"
-src_loaddb_sql: "https://raw.githubusercontent.com/mheslin/SQL-Server---RHEL-BM-Demo/master/Load_DB.sql"
+src_loaddb_sql: "https://raw.githubusercontent.com/davidszegedi/SQL-Server---RHEL-BM-Demo/master/Load_DB.sql"
 tgt_loaddb_sql: "{{ path_home }}/Load_DB.sql"
-src_querydb_sql: "https://raw.githubusercontent.com/mheslin/SQL-Server---RHEL-BM-Demo/master/Query_DB.sql"
+src_querydb_sql: "https://raw.githubusercontent.com/davidszegedi/SQL-Server---RHEL-BM-Demo/master/Query_DB.sql"
 tgt_querydb_sql: "{{ path_home }}/Query_DB.sql"
-src_dropdb_sql: "https://raw.githubusercontent.com/mheslin/SQL-Server---RHEL-BM-Demo/master/Drop_DB.sql"
+src_dropdb_sql: "https://raw.githubusercontent.com/davidszegedi/SQL-Server---RHEL-BM-Demo/master/Drop_DB.sql"
 tgt_dropdb_sql: "{{ path_home }}/Drop_DB.sql"
 
 var_sat: disabled
