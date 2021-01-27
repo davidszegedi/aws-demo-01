@@ -1,0 +1,9 @@
+---
+- name: ansible ping inventory hosts 
+  hosts: all
+  gather_facts: no
+
+  tasks:
+
+  - name: Test we can logon to hosts and execute python with json lib
+    ping:
