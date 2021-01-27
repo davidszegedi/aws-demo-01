@@ -1,7 +1,4 @@
 ---
-- name: Inclure les taches d'attachement a la souscription
-  include: task-attach-sub.yml
-
 - name: Print Red Hat release
   command: "cat /etc/redhat-release"
   register: rhrelease
